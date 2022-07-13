@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+
+    <script async src="./index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="top-menu">
+        <div class="top-menu-content">
+            <form class="search-form">
+                <input type="text" name="search" placeholder="Lavarropas..." class="search-input">
+                <button class="search-btn">Buscar</button>
+            </form>            
+        </div>
+    </header>
+    
+    <div class="content">
+        <h3 class="results-title">Resultados: <span class="results-count">0</span></h3>
+
+        <div class="results"></div>
+    </div>
+    <template id="result-item-template">
+        <div class="result-item">
+            <img src="" alt="" class="result-item-img">
+    
+            <div class="result-item-content">
+                <h4 class="result-item-title"></h4>
+                <p class="result-item-condition"></p>
+                <p class="result-item-sell">
+                    Vendidos: <span class="result-item-sell-count"></span>
+                </p>
+            </div>
+    
+            <div class="result-item-price"></div>
+        </div>        
+    </template>
+</body>
+</html>
